@@ -9,20 +9,16 @@ export class OperasBasComponent {
   num1:string='';
   num2:string='';
   resultado:number=0;
-  ope:number=0;
-  suma:boolean=false;
-  resta:boolean=false;
-  multiplicacion:boolean=false;
-  division:boolean=false;
+  opcion:number=0;
   operacion():void{
-    
-    if(this.suma==true)
+
+    if(this.opcion==1)
     this.resultado = parseFloat(this.num1)+parseFloat(this.num2);
-    if(this.resta==true)
+    if(this.opcion==2)
     this.resultado = parseFloat(this.num1)-parseFloat(this.num2);
-    if(this.multiplicacion==true)
+    if(this.opcion==3)
     this.resultado = parseFloat(this.num1)*parseFloat(this.num2);
-    if(this.division==true)
+    if(this.opcion==4)
     this.resultado = parseFloat(this.num1)/parseFloat(this.num2);
   
 
